@@ -1,0 +1,36 @@
+Resumen del Código
+Repositorio: https://github.com/cmauriciocarrillo/TestSeleniumDemoBlaze
+
+El código proporcionado realiza pruebas automatizadas en la página web https://www.demoblaze.com/ utilizando Selenium WebDriver con soporte para los navegadores Chrome y Firefox. El objetivo principal es verificar el flujo de compra en el sitio web, asegurando que los productos se añaden al carrito y se completa una compra correctamente.
+
+Hallazgos Clave
+1. Configuración de Navegadores:
+El código utiliza parametrización para ejecutar pruebas en diferentes navegadores, específicamente Chrome y Firefox. Esto garantiza que las pruebas sean versátiles y compatibles con múltiples entornos de usuario.
+
+2.Flujo de Prueba:
+Navegación y Selección de Productos:
+El script navega por la página, selecciona productos y los añade al carrito.
+Simulación de Compra:
+Se completa una compra mediante el llenado de un formulario y la aceptación de alertas.
+Validación:
+Se valida que el mensaje de compra exitosa se muestra correctamente en la interfaz.
+
+3.Validación del Mensaje de Confirmación:
+El código verifica que el mensaje de confirmación de compra sea "Thank you for your purchase!".
+Se utiliza un assertEquals para comparar el mensaje esperado con el mensaje recibido. Si la comparación falla, se proporciona un mensaje de error detallado.
+
+Manejo de Excepciones:
+Se capturan excepciones durante la ejecución para proporcionar información sobre cualquier error encontrado.
+Los mensajes de error se imprimen para ayudar en la depuración.
+
+Revisar XPaths:
+Asegúrese de que los XPaths utilizados para localizar elementos sean correctos y funcionen en todos los navegadores. Considerar el uso de XPaths más robustos o basados en atributos únicos de los elementos.
+
+Ajustar Tiempos de Espera:
+Los tiempos de espera (Thread.sleep()) pueden ser ajustados o reemplazados por esperas explícitas para mejorar la estabilidad de las pruebas.
+
+Depuración de Navegadores:
+Realizar pruebas adicionales en diferentes versiones de navegadores y en diferentes entornos para identificar y corregir problemas específicos.
+
+Mensajes de Error Detallados:
+Mejorar la captura y visualización de mensajes de error para facilitar la resolución de problemas.
